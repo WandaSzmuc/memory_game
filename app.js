@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cards[optionTwoId].setAttribute("src", "images/rotate.png");
       alert("Try again!");
     }
+
     cardsChosen = [];
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
