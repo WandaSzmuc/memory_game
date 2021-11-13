@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(202, 197, 197);
+  background-color: pink;
 }
 .main_container {
   width: 100vw;
@@ -14,7 +14,7 @@ body {
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
-  color: rgb(56, 156, 202);
+  color: rgb(228, 79, 103);
   /* border: 1px solid grey; */
   border-radius: 5px;
   box-shadow: 0 0 1em grey;
