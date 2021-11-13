@@ -1,4 +1,5 @@
 body {
+  margin: 0 auto;
   background-color: pink;
 }
 .main_container {
@@ -8,25 +9,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 400px) {
+  .main_container {
+    margin-left: 15px;
+    align-items: flex-start;
+  }
+}
 .header {
-  max-width: 250px;
   background-color: white;
   padding: 20px 30px;
   text-transform: uppercase;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 30px;
+  font-size: 50px;
   color: rgb(247, 91, 117);
   /* border: 1px solid grey; */
   border-radius: 5px;
   box-shadow: 0 0 1em grey;
 }
+@media (max-width: 400px) {
+  .header {
+    font-size: 30px;
+  }
+}
 .grid {
   background-color: white;
-  padding: 10px 15px;
+  padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   border-radius: 5px;
   box-shadow: 0 0 1em grey;
+}
+@media (max-width: 400px) {
+  .grid {
+    padding: 10px 10px;
+    width: 300px;
+    height: 400px;
+  }
 }
