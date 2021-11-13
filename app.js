@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       img: "images/crab.png",
     },
     {
-      name: "panda",
-      img: "images/panda.png",
+      name: "chicken",
+      img: "images/chicken.png",
     },
     {
       name: "turtle",
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
       img: "images/crab.png",
     },
     {
-      name: "panda",
-      img: "images/panda.png",
+      name: "chicken",
+      img: "images/chicken.png",
     },
     {
       name: "turtle",
@@ -74,11 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const optionTwoId = cardsChosenId[1];
 
     if (optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute("src", "images/bowl.png");
-      cards[optionTwoId].setAttribute("src", "images/bowl.png");
-      alert("Ten sam obrazek kliknięty 2 razy!");
+      cards[optionOneId].setAttribute("src", "images/rotate.png");
+      cards[optionTwoId].setAttribute("src", "images/rotate.png");
+      alert("Same image clicked twice!");
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      alert("Dopasowane!");
+      alert("Matched!");
       cards[optionOneId].setAttribute("src", "images/bowl.png");
       cards[optionTwoId].setAttribute("src", "images/bowl.png");
       cards[optionOneId].removeEventListener("click", flipCard);
@@ -87,13 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       cards[optionOneId].setAttribute("src", "images/rotate.png");
       cards[optionTwoId].setAttribute("src", "images/rotate.png");
-      alert("Spróbuj ponownie");
+      alert("Try again!");
     }
     cardsChosen = [];
     cardsChosenId = [];
     resultDisplay.textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) {
-      resultDisplay.textContent = "Gratulacje, wszystkie sparowane!";
+      resultDisplay.textContent = "Congratulations, all paired!";
     }
   }
 
